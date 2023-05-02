@@ -1,7 +1,7 @@
 const upstashRedisRestUrl = process.env.UPSTASH_REDIS_REST_URL;
 const authToken = process.env.UPSTASH_REDIS_REST_TOKEN;
 
-type Commands = "zrange" | "sismember" | "get" | "smember";
+type Commands = "zrange" | "sismember" | "get" | "smembers";
 
 export async function fetchRedis(
   command: Commands,
@@ -15,6 +15,8 @@ export async function fetchRedis(
     },
     cache: "no-store",
   });
+
+  console.log(response);
 
   if (!response.ok) {
     throw new Error(`Error executing Redis command: ${response.statusText}`);
