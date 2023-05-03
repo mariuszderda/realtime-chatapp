@@ -7,7 +7,7 @@ const Page = async () => {
   const session = await getServerSession(authOptions);
 
   return (
-    <div>
+    <div className="max-w-[50vw]">
       <pre>{JSON.stringify(session)}</pre>
     </div>
   );
