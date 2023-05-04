@@ -1,4 +1,4 @@
-import { addFriendValidator } from "@/lib/validator/add-friend";
+import { addFriendValidator } from "@/lib/validations/add-friend";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/authOptions";
 import { fetchRedis } from "@/helpers/redis";
