@@ -77,6 +77,7 @@ const Page = async ({ params }: PageProps) => {
         </div>
       </div>
       <Messages
+        chatId={chatId}
         chatPartnerImage={chatPartner.image}
         sessionImg={session.user.image}
         initialMessages={initialMessages}
@@ -87,4 +88,5 @@ const Page = async ({ params }: PageProps) => {
   );
 };
 
+// @ts-ignore
 export default Page;

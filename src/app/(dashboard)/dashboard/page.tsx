@@ -8,7 +8,7 @@ const Page = async () => {
 
   return (
     <div className="max-w-[50vw]">
-      <pre>{JSON.stringify(session)}</pre>
+      <pre>Dashboard</pre>
     </div>
   );
 };
